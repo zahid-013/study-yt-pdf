@@ -9,11 +9,11 @@ from pathlib import Path
 import sys
 
 # Add project root to path so top-level package imports work
-sys.path.insert(0, str(Path(__file__).parent))
+sys.path.insert(0, str(Path(__file__).parent.parent))
 
 # Import mode modules (we'll handle inline for now due to directory structure)
-from Projects.study_config import *
-from Projects.study_db import StudyDB
+from study_config import *
+from study_db import StudyDB
 
 # Page configuration
 st.set_page_config(
@@ -68,7 +68,7 @@ if st.session_state.current_mode == "youtube":
     from langchain_core.output_parsers import StrOutputParser
     from youtube_transcript_api import YouTubeTranscriptApi, TranscriptsDisabled
     
-    from Projects.study_utils import (
+    from study_utils import (
         load_llm, load_embeddings, format_docs, 
         extract_youtube_video_id, create_youtube_prompt, get_text_splitter
     )
@@ -210,7 +210,7 @@ else:
     from langchain_core.output_parsers import StrOutputParser
     from langchain_core.prompts import PromptTemplate
     
-    from Projects.study_utils import load_llm, get_text_splitter, create_pdf_prompt
+    from study_utils import load_llm, get_text_splitter, create_pdf_prompt
 
     # Initialize PDF session state
     if "pdf_chat_history" not in st.session_state:
