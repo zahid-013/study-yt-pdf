@@ -8,6 +8,8 @@ import streamlit as st
 from pathlib import Path
 import sys
 
+from study_config import K_RETRIEVER
+
 # Add project root to path so top-level package imports work
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
