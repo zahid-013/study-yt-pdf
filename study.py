@@ -9,7 +9,7 @@ from pathlib import Path
 import sys
 
 # Add project root to path so top-level package imports work
-sys.path.insert(0, str(Path(__file__).parent.parent))
+sys.path.insert(0, str(Path(__file__).parent))
 
 # Import mode modules (we'll handle inline for now due to directory structure)
 from Projects.study_config import *
