@@ -5,7 +5,7 @@ from typing import List, Tuple, Optional
 from pathlib import Path
 import json
 
-from Projects.study_config import DB_PATH, DB_TIMEOUT
+from study_config import DB_PATH, DB_TIMEOUT
 
 
 class StudyDB:

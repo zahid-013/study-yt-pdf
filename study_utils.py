@@ -9,7 +9,7 @@ from langchain_huggingface import ChatHuggingFace, HuggingFaceEndpoint
 from langchain_huggingface.embeddings import HuggingFaceEmbeddings
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
-from Projects.study_config import LLM_CONFIG, EMBEDDINGS_MODEL, CHUNK_SIZE, CHUNK_OVERLAP
+from study_config import LLM_CONFIG, EMBEDDINGS_MODEL, CHUNK_SIZE, CHUNK_OVERLAP
 
 
 @st.cache_resource
