@@ -11,7 +11,7 @@ TEMP_DIR.mkdir(exist_ok=True)
 
 # LLM Configuration
 LLM_CONFIG = {
-    "repo_id": "meta-llama/Llama-3.3-70B-Instruct",
+    "repo_id": "meta-llama/Llama-3.1-8B-Instruct",
     "task": "text-generation",
     "temperature": 0.5,
 }
